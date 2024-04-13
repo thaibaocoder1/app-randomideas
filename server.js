@@ -9,7 +9,7 @@ const database = require("./config/db");
 const app = express();
 
 const corOptions = {
-  origin: ["http://localhost:3000", "http://localhost:5000"],
+  origin: ["http://localhost:5000", "http://localhost:3000"],
   credentials: true,
   optionsSuccessStatus: 200,
 };
