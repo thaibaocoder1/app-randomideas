@@ -9,7 +9,9 @@ const database = require("./config/db");
 const app = express();
 
 const corOptions = {
-  origin: "*",
+  origin: ["http://localhost:3000", "http://localhost:5000"],
+  credentials: true,
+  optionsSuccessStatus: 200,
 };
 app.use(cors(corOptions));
 
