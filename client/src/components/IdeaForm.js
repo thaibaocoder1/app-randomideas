@@ -37,9 +37,9 @@ class IdeaForm {
     this._formModal.innerHTML = `<form id="idea-form">
     <div class="form-control">
       <label for="idea-text">Enter a Username</label>
-      <input type="text" name="username" id="username" value=${
+      <input type="text" value="${
         localStorage.getItem("user") ? localStorage.getItem("user") : ""
-      } />
+      }" name="username" id="username" />
     </div>
     <div class="form-control">
       <label for="idea-text">What's Your Idea?</label>
